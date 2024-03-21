@@ -1,0 +1,23 @@
+{
+  "name": "pricing-cards",
+  "version": "1.0.0",
+  "description": "Basic example of bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jscamelcase/bootstrap-projects.git"
+  },
+  "author": "Carl Paraskevas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jscamelcase/bootstrap-projects/issues"
+  },
+  "homepage": "https://github.com/jscamelcase/bootstrap-projects#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3"
+  }
+}
