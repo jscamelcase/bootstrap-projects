@@ -4,7 +4,8 @@
   "description": "Basic example of bootstrap",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass:build": "sass --nosource-map scss:css",
+    "sass:watch": "sass --no-source-map --watch scss:css"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/jscamelcase/bootstrap-projects#readme",
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "bootstrap-icons": "^1.11.3"
+    "bootstrap-icons": "^1.11.3",
+    "sass": "^1.62.0"
   }
 }
