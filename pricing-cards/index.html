@@ -26,7 +26,8 @@
     <div class="container">
       <!--we're creating a bootsrap column by starting the row first, we're also applying a margin top of 5 to the row-->
       <div class="row mt-5">
-        <!-- we are creating two columns each with a width of 6 out 12 (so two columns), the md indicates that these apply to screen sizes of medium and higher, below medium they collapse into a single column -->
+        <!-- we are creating two columns each with a width of 6 out 12 (so two columns, one further down), the md indicates that these apply to screen sizes of medium and higher, below medium they collapse into a single column -->
+        <!-- Column 1-->
         <div class="col-md-6">
           <!-- Card 1-->
           <!-- we are using the class of card to indicate a card, rounded edges set to size 4, a large drop shadow, no border and a margin bottom of 5-->
@@ -36,15 +37,79 @@
               <div>
                 <!--We are setting the heading font weight to bold-->
                 <h4 class="fw-bold">Free</h4>
-                <!-- The text muted class is used to indicate less important or secondary nature text-->
-                <p class="text-muted">For freelancers</p>
+                <!-- text-muted has been used to show lower hierarchy/less emphasis.-->
+                <p class="text-muted">For Freelancers</p>
               </div>
               <!-- fs-1 sets the font size with 1 being the largest and 6 being the smallest, mt-4 is margin top and mb-5 is margin bottom-->
               <h2 class="fs-1 fw-bold mt-4 mb-5">$0</h2>
+              <!--We've creating a list-group for our list and choosing the most basic style, which is list-group-flush, which means there is no order or rounded corners, we use vstack to create a formatted verticle layout and the gap proeprty to centrally set the gap between each item in the stack-->
+              <ul class="list-group list-group-flush fs-5 mb-5 vstack gap-2">
+                <!-- for the list item we're creating, we need to indicate that every list item be a list group-item of the list group and to remove the default border for each item we apply the border-0 class-->
+                <li class="list-group-item border-0">
+                  <!-- Inside each list item we are using a bootstrap icon, which requires the bi class plus the icon type, which in this case is bi-check2 -->
+                  <i class="bi bi-check2"></i>Single User
+                </li>
+                <li class="list-group-item border-0">
+                  <i class="bi bi-check2"></i>10 Dowloads Per Month
+                </li>
+                <li class="list-group-item border-0">
+                  <i class="bi bi-check2"></i>Faster Files
+                </li>
+                <li class="list-group-item border-0">
+                  <i class="bi bi-check2"></i>25 Custom Packs
+                </li>
+              </ul>
+              <!--Adding a button that will span the full width of the column is easiestly achieved by wrapping it inside a div container with the bootstrap class d-grid -->
+              <div class="d-grid">
+                <button class="btn btn-dark rounded-4 mt-5 mb-4">
+                  Subscribe
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6">col2</div>
+        <!--The Second Column -->
+        <div class="col-md-6">
+          <!-- Column 2 (very similar to column #1)-->
+          <!-- We've added a dark background here versus a light background with the assosiative text using the "text-bg-dark" class"-->
+          <div class="card text-bg-dark rounded-4 shadow-lg border-0 mb-5">
+            <!-- we need to decalre the card body in a child div-->
+            <div class="card-body">
+              <div>
+                <!--We are setting the heading font weight to bold-->
+                <h4 class="fw-bold">Pro</h4>
+                <!-- text-muted has been switched out for text-white to contrast with black background-->
+                <p class="text-white">For Agencies</p>
+              </div>
+              <!-- fs-1 sets the font size with 1 being the largest and 6 being the smallest, mt-4 is margin top and mb-5 is margin bottom-->
+              <h2 class="fs-1 fw-bold mt-4 mb-5">$100</h2>
+              <!--We've creating a list-group for our list and choosing the most basic style, which is list-group-flush, which means there is no order or rounded corners, we use vstack to create a formatted verticle layout and the gap proeprty to centrally set the gap between each item in the stack-->
+              <ul class="list-group list-group-flush fs-5 mb-5 vstack gap-2">
+                <!-- for the list item we're creating, we need to indicate that every list item be a list group-item of the list group and to remove the default border for each item we apply the border-0 class, we've added text-bg-dark because of the dark background-->
+                <li class="list-group-item border-0 text-bg-dark">
+                  <!-- Inside each list item we are using a bootstrap icon, which requires the bi class plus the icon type, which in this case is bi-check2 -->
+                  <i class="bi bi-check2"></i>Unlimted Users
+                </li>
+                <li class="list-group-item border-0 text-bg-dark">
+                  <i class="bi bi-check2"></i>Unlimted Downloads
+                </li>
+                <li class="list-group-item border-0 text-bg-dark">
+                  <i class="bi bi-check2"></i>Fully Editable Files
+                </li>
+                <li class="list-group-item border-0 text-bg-dark">
+                  <i class="bi bi-check2"></i>200+ Custom Packs
+                </li>
+              </ul>
+              <!--Adding a button that will span the full width of the column is easiestly achieved by wrapping it inside a div container with the bootstrap class d-grid -->
+              <div class="d-grid">
+                <!-- We've replaced btn-dark with btn-light to contract with the black background-->
+                <button class="btn btn-light rounded-4 mt-5 mb-4">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

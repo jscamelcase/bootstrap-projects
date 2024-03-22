@@ -1,3 +1,10 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+/* limit the width of the container so it doesn't grow too big after 800px wide screen */
+@media (min-width: 800px) {
+  .container {
+    width: 800px;
+  }
+}
