@@ -11,6 +11,6 @@
   "scripts": {
     "start": "parcel serve src/index.html --public-url / --dist-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx -p parcel-bundler parcel build index.html"
+    "build": "parcel build"
   }
 }
